@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica de Ocorrências de Emergência</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D8C4FF;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #8C52FF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+            color: white;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #00BF63;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Paciente</h1>
+        <form>
+            <label>Data:</label>
+            <input type="date" name="data">
+
+            <label>Sexo:</label>
+            <select name="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+
+            <label>Nome Hospital:</label>
+            <input type="text" name="hospital">
+
+            <label>Nome do paciente:</label>
+            <input type="text" name="nome">
+            <label for="idade">Selecione a Idade:</label>
+            <input type="number" name="idade">
+            <label>RG/CPF:</label>
+            <input type="number" name="nome">
+            <label>Fone:</label>
+            <input type="number" name="nome">
+            <label>Acompanhante:</label>
+            <input type="text" name="nome">
+            <label>Idade acomp.:</label>
+            <input type="number" name="nome">
+            <label>Local da ocorrência</label>
+            <input type="text" name="nome">
+            <label for="local">N° USB:</label>
+            <input type="text" id="local" name="local">
+        </div>
+        
+        <div class="form-group">
+            <label for="checkbox">Divulgar para imprensa?</label>
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <input type="checkbox" id="checkbox" name="checkbox">
+        </div>
+
+
+
+            <!-- Adicione mais campos aqui conforme necessário -->
+
+            <button type="submit">concluído</button>
+        </form>
+    </div>
+</body>
+</html>
